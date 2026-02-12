@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('bakinskay.otf') format('opentype');
+}
+
+@keyframes slideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#f4c4b6;
+}
+
+.block {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 60vh;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    animation: slideFadeIn 0.6s ease forwards;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+}
+
+.dissable {
+    display: none !important;
+}
+
+p.text_header {
+    font-family: 'MyCustomFont', sans-serif;
+    color: #b6383b;
+    font-size: 60px;
+    margin: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 0.6;
+}
+
+p.main_text {
+    font-family: 'SN Pro';
+    margin: 0;
+    line-height: 1; 
+    text-align: center;
+}
+
+.main_text.imp {
+    font-size: 16px;
+    font-weight: 600;
+    color: #b6383b;
+}
+
+.main_text.sml {
+    font-size: 11px;
+}
+
+.start {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid #b6383b;
+    border-radius: 50px;
+    background-color: #b6383b;
+    color: white;
+    font-family: 'SN Pro';
+    font-size: 20px;
+}
+
+.back {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid #b6383b;
+    border-radius: 50px;
+    background-color: white;
+    font-family: 'SN Pro';
+    font-size: 16px;
+}
+
+.container {
+    margin-top: 20px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.container_field {
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.msg_container {
+    overflow: scroll;
+    width: 80%;
+    height: 50%;
+    border-radius: 10px;
+    border: 2px dashed #b6383b;
+}
+
+.msg_container .main_text {
+    padding: 16px;
+    text-align: start;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.icon {
+    width: 20px;
+}
+
+.top.block .text_header{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.top_container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.banner {
+    width: 70%;
+}
+
+.end .text_header {
+    line-height: 1;
+}

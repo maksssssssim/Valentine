@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Валентинка</title>
+</head>
+<body>
+    <div class="main block">
+        <img src="https://img.icons8.com/?size=100&id=V4c6yYlvXtzy&format=png&color=000000" alt="heart" class="main_icon"/>
+        <div class="text">
+            <p class="text_header">Лисонька моя</p>
+            <p class="main_text">Я сделал кое-что для тебя в честь нашего первого праздника</p>
+        </div>
+        <button class="start" onclick="change_page('menu', 'main')">Открой свой подарок</button>
+    </div>
+    <div class="menu block">
+        <div class="text">
+            <p class="text_header">Выбирай конверт</p>
+            <p class="main_text">В каждом из них что-то связанное с нами</p>
+        </div>
+        <div class="container">
+            <div class="container_field" onclick="change_page('cupon', 'menu')">
+                <img src="https://img.icons8.com/?size=100&id=I0Zme7CnEPPD&format=png&color=b6383b" class="icon"/>
+                <p class="main_text">Эксклюзивные купоны</p>
+            </div>
+            <div class="container_field" onclick="change_page('msg', 'menu')">
+                <img src="https://img.icons8.com/?size=100&id=okvpqeYbG0xb&format=png&color=b6383b" class="icon"/>
+                <p class="main_text">Мое письмо</p>
+            </div>
+            <div class="container_field" onclick="change_page('top', 'menu')">
+                <img src="https://img.icons8.com/?size=100&id=feQIjQlsqvSv&format=png&color=b6383b" class="icon"/>
+                <p class="main_text">Почему я люблю тебя</p>
+            </div>
+            <div class="container_field" onclick="change_page('invite', 'menu')">
+                <img src="https://img.icons8.com/?size=100&id=zN9xPcEAcKdy&format=png&color=b6383b" class="icon"/>
+                <p class="main_text">Валентинка?</p>
+            </div>
+        </div>
+    </div>
+    <div class="cupon block">
+        <div class="text">
+            <p class="text_header">Подарочные купоны</p>
+            <p class="main_text">Приятные мелочи, которые можно активировать один раз</p>
+        </div>
+        <div class="container">
+            <div class="container_field">
+                <p class="main_text imp">Завтрак в постель</p>
+                <p class="main_text sml">Любой на выбор (из того, что есть дома)</p>
+            </div>
+            <div class="container_field">
+                <p class="main_text imp">Свидание вслепую</p>
+                <p class="main_text sml">Полностью организую свидание, твоя задача - освободить время и довериться мне</p>
+            </div>
+            <div class="container_field">
+                <p class="main_text imp">Массаж</p>
+                <p class="main_text sml">Устраиваю тебе полчаса кайфушного массажа</p>
+            </div>
+            <div class="container_field">
+                <p class="main_text imp">Легализация вредности</p>
+                <p class="main_text sml">Твоя вредность принимается полностью, моя - отсутствует весь день</p>
+            </div>
+        </div>
+        <button class="back" onclick="change_page('menu', 'cupon')">Вернуться назад</button>
+    </div>
+    <div class="msg block">
+        <p class="text_header">Моей любимой</p>
+        <div class="msg_container">
+            <p class="main_text">Спасибо тебе за то, какая ты есть, за твою искренность, за твою нежность и заботу. За утро, когда ты рядом, за вечера, когда мы просто говорим ни о чем и мне этого достаточно. За все наши воспоминания, которые были, есть и будут. Но главное - спасибо за уверенность, что впереди все будет хорошо. Рядом с тобой я перестаю бояться, не потому, что жизнь стала легче, а потому, что с тобой можно справиться с чем угодно. Ты - мой дом, моя тихая гавань, мой уютный уголок. Спасибо, что выбрала меня однажды и выбираешь каждый день. Я люблю тебя.</p>
+        </div>
+        <button class="back" onclick="change_page('menu', 'msg')">Вернуться назад</button>
+    </div>
+    <div class="top block">
+        <p class="text_header">Топ-5 причин почему я тебя люблю</p>
+        <div class="top_container">
+            <p class="main_text">Ты не терпишь несправедливости, даже когда проще промолчать</p>
+            <p class="main_text">Твой смех и твои добрые глаза</p>
+            <p class="main_text">Твоя способность благодарить за то, что кажется обязанностью</p>
+            <p class="main_text">Вдохновляешь меня быть лучше без лишнего давления</p>
+            <p class="main_text">Твоя сила признавать своих тараканов и жить с ними</p>
+        </div>
+        <button class="back" onclick="change_page('menu', 'top')">Вернуться назад</button>
+    </div>
+    <div class="invite block">
+        <p class="text_header">Ты будешь моей валентинкой?</p>
+        <img src="valentine.jpg" alt="valentine" class="banner">
+        <button class="start" onclick="change_page('end', 'invite')">Конечно, буду</button>
+        <button class="back" onclick="change_page('menu', 'invite')">Вернуться назад</button>
+    </div>
+    <div class="end block">
+        <p class="text_header">УРААА, ЛЮБЛЮ ТЕБЯ!</p>
+        <img src="end.jpg" alt="valentine" class="banner">
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>
