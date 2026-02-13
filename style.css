@@ -32,7 +32,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 90vw;
-    height: 80vh;
+    height: 60vh;
     border-radius: 20px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     animation: slideFadeIn 0.6s ease forwards;
@@ -158,4 +158,5 @@ p.main_text {
     line-height: 1;
 
 }
+
 
